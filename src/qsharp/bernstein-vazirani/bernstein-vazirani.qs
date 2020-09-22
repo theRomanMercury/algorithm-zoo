@@ -6,7 +6,7 @@ namespace BernsteinVazirani {
 
     operation ApplyBV(
         oracle : ((Qubit[],Qubit) => Unit is Adj + Ctl),
-        n : Int
+        let n = DrawRandomInt (min : Int, max : Int) : Int
     ) : Int {
         using ((queryRegister, target) = (Qubit[n], Qubit())) {
             within {
