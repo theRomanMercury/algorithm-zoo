@@ -1,6 +1,7 @@
 namespace BernsteinVazirani {
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Canon;
+    open Microsoft.Quantum.Random;
 
     //TODO: Implement the oracle!
 
